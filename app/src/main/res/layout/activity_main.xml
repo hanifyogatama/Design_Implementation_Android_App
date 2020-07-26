@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.06" />
+        app:layout_constraintGuide_percent="0.09" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gHorizontal2"
@@ -45,11 +45,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
+    <ImageView
         android:id="@+id/view2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#fff"
+        android:src="@drawable/card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your Plan"
+        android:fontFamily="@font/ubuntu"
         android:textStyle="bold"
         android:textColor="#fff"
         android:textSize="20sp"
@@ -182,7 +183,7 @@
         android:background="@drawable/btn"
         android:fontFamily="@font/ubuntu"
         android:text="weekly"
-        android:textColor="#DBDBDB"
+        android:textColor="#9B9B9B"
         app:layout_constraintStart_toStartOf="@id/gVertical1"
         app:layout_constraintTop_toBottomOf="@id/tvFrequency" />
 
@@ -193,7 +194,7 @@
         android:background="@drawable/btn"
         android:fontFamily="@font/ubuntu"
         android:text="bi-weekly"
-        android:textColor="#DBDBDB"
+        android:textColor="#9B9B9B"
         app:layout_constraintBottom_toBottomOf="@id/btn1"
         app:layout_constraintEnd_toStartOf="@id/btn3"
         app:layout_constraintStart_toEndOf="@id/btn1"
